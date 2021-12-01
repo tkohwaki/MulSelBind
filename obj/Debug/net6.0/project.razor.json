@@ -12,6 +12,39 @@
   "ProjectWorkspaceState": {
     "TagHelpers": [
       {
+        "HashCode": -1151875952,
+        "Kind": "Components.Component",
+        "Name": "MulSelBind.Pages.Index",
+        "AssemblyName": "MulSelBind",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Index"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "MulSelBind.Pages.Index"
+        }
+      },
+      {
+        "HashCode": -1649840301,
+        "Kind": "Components.Component",
+        "Name": "MulSelBind.Pages.Index",
+        "AssemblyName": "MulSelBind",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "MulSelBind.Pages.Index"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "MulSelBind.Pages.Index",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
         "HashCode": -256069995,
         "Kind": "Components.Component",
         "Name": "MulSelBind.Pages.Counter",

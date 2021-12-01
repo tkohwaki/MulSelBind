@@ -11,10 +11,8 @@
 	<option value="orange">橙</option>
 </select>
 <br/>
-@if (SelectedColors != null && SelectedColors.Length != 0) {
-    foreach(var c in SelectedColors) {
-        <div style="width:100px;height:30px;background-color:@c"></div>
-    }
+@foreach(var c in SelectedColors) {
+	<div style="width:100px;height:30px;background-color:@c"></div>
 }
 
 @code {
