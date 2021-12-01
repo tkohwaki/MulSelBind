@@ -1,0 +1,22 @@
+﻿@page "/"
+
+<h2>Multiple Select Bind</h2>
+
+<select style="width:200px" multiple size="6" @bind="SelectedColors">
+	<option value="red">赤</option>
+	<option value="blue">青</option>
+	<option value="green">緑</option>
+	<option value="magenta">紫</option>
+	<option value="yellow">黄</option>
+	<option value="orange">橙</option>
+</select>
+<br/>
+@if (SelectedColors != null && SelectedColors.Length != 0) {
+    foreach(var c in SelectedColors) {
+        <div style="width:100px;height:30px;background-color:@c"></div>
+    }
+}
+
+@code {
+	protected string[] SelectedColors = new string[] {};
+}
