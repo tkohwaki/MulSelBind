@@ -2,6 +2,7 @@
 
 <h2>Multiple Select Bind</h2>
 
+<!-- Multiple Selectに配列をバインドする .NET6から使える -->
 <select style="width:200px" multiple size="6" @bind="SelectedColors">
 	<option value="red">赤</option>
 	<option value="blue">青</option>
@@ -11,10 +12,12 @@
 	<option value="orange">橙</option>
 </select>
 <br/>
+<!-- バインドされた「色」のDIVを表示 -->
 @foreach(var c in SelectedColors) {
 	<div style="width:100px;height:30px;background-color:@c"></div>
 }
 
 @code {
+	// selectタグで選択された値をバインドする変数
 	protected string[] SelectedColors = new string[] {};
 }
